@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+* {
+  transition: all 0.2s linear;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -64,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: rgb(20, 20, 20);
+  background-color: black;
 }
 
 h1,
