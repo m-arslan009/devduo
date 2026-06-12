@@ -1,14 +1,19 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
+import SiteLayout from './layouts/SiteLayout'
+import Home from './pages/Home'
+import Project from './pages/Project'
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Hero />
-    </>
+    <Routes>
+      <Route element={<SiteLayout />}>
+        <Route index element={<Home />} />
+        <Route path="projects" element={<Project />} />
+      </Route>
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   )
 }
 
