@@ -1,7 +1,7 @@
 function Hero() {
   return (
-    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20">
+    <section className="w-full py-12 sm:py-16 lg:py-20">
+      <div className="grid grid-cols-1 gap-12 sm:gap-16 lg:grid-cols-2 lg:gap-20">
       <div>
         <p className="text-left text-xs text-gray-500 tracking-widest uppercase mb-8">— Full-Stack Development · Lahore, PK</p>
         <h1 className="text-left leading-none text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold">
@@ -16,8 +16,8 @@ function Hero() {
           <button className="bg-yellow-300 hover:bg-yellow-400 cursor-pointer text-black py-2 px-6 rounded font-semibold text-sm w-full sm:w-auto text-center">See our work</button>
           <button className="border border-gray-600 hover:border-gray-400 cursor-pointer py-2 px-6 rounded text-sm text-gray-300 hover:text-white w-full sm:w-auto text-center">Get in touch</button>
         </div>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 text-sm mt-8 sm:mt-10 items-start sm:items-center">
-          <p className="text-gray-500 text-xs sm:text-sm">Find us on</p>
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 text-sm mt-8 sm:mt-10 items-start sm:items-center sm:w-full">
+          <p className="text-gray-500 text-xs sm:text-sm sm:min-w-fit">Find us on</p>
           <p className="border border-emerald-700 px-3 py-1 bg-emerald-900/40 text-emerald-400 rounded text-xs font-medium">Fiverr</p>
           <p className="border border-emerald-700 px-3 py-1 bg-emerald-900/40 text-emerald-400 rounded text-xs font-medium">Upwork</p>
         </div>
